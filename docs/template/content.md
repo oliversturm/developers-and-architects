@@ -28,6 +28,7 @@ Idea: Talk about technology
 * Microservices
 * Data persistence
 * User Interfaces
+* Programming Languages
 * Mobile
 * Cloud
 * Open Source
@@ -58,7 +59,7 @@ Idea: Talk about technology
 
 ^
 
-## Terminonoly: Web Application
+## Terminology: Web Application
 
 ^
 
@@ -79,7 +80,7 @@ Idea: Talk about technology
 
 ^
 
-## SOA
+## Services -- SOA
 
 Remember the four tenets Don Box got excited about?
 
@@ -101,21 +102,212 @@ SOA *resulted* in a very formal understanding of service architecture, which is 
 
 ^
 
-## Real-time Web
+## Services -- Real-time Web
 
 * WebSockets and their various ancestors
 * Bi-directional communication
+
+Reasoning for real-time web techniques: 
 
 ---
 
 ## Microservices
 
-* How big is a microservice? It depends.
-  * Do one "thing" well. What's a "thing"? It depends.
-  * Two-pizza team
-  * Throwawayable
-  * Focus on boundaries and business context, not on lines of code
+How big is a microservice? It depends.
+
+* Do one "thing" well. What's a "thing"? It depends.
+* Two-pizza team
+* Throwawayable
+* Focus on boundaries and business context, not on lines of code
+
+^
+
+## Microservices -- Communication
+
+* Direct communication between services
+* Message Queues
+* Service Bus (ESB)
+
+^
+
+## Microservices -- Composition
+
+* Function level: AWS Lambda, Azure Functions -- "Serverless" Computing
+  * Integration with cloud infrastructure for triggering and output generation
+* Docker containers
+* docker-compose
+* Cloud container services (ecs-cli, Azure Docker VM extension)
+  * Also support composition
+
+^
+
+## Microservices -- Reasoning
+
+---
+
+## Data Persistence
+
+* Relational databases
+* NoSQL options
+  * Key/value and column family stores
+  * Document
+  * Data analytics (e.g. MapReduce)
+
+^
+
+## Data Persistence -- NoSQL
+
+<img src="nosql.png" style="height:400px" alt="Visual Guide to NoSQL Systems">
+<small>The only image in this presentation, used with permission from Nathan Hurst, nathan@developersforgood.org</small>
+<small>http://blog.nahurst.com/visual-guide-to-nosql-systems</small>
+^
+
+## Reasoning NoSQL vs RDBMS: 
+
+^
+
+## Data Persistence -- ORM
+
+* Choice of frameworks
+* Top Down or Bottom Up?
+* DB Independence
+
+Reasoning:
+
+^
+
+## Data Persistence -- CQRS
+
+Command/Query Responsibility Segregation
+
+* Separate query and command models
+* Conflicts with ORM?
+* Event Sourcing
+  * Eventual consistency
+
+^
+
+## Reasoning CQRS and Event Sourcing:
+
+---
+
+## User Interfaces
+
+* Platforms
+  * Native: WinForms, XAML
+  * HTML
+	* Electron
+
+Reasoning for native UI platforms:
+
+^
+
+## UI Application Patterns
+
+* MVVM
+* Flux
+
+^
+
+## HTML UI -- Where to Render
+
+* Traditional web-server based rendering?
+
+Reasoning:
+
+---
+
+## Programming Languages
+
+* .NET: C#, VB.NET, F#, others?
+* JavaScript: Native, TypeScript, CoffeeScript, LiveScript, others?
+
+---
+
+## Mobile
+
+* Mobile support as a conceptual module
+* Strategic platform?
+
+^
+
+## "Native" Mobile
+
+* iOS SDK
+* Android SDK
+* Windows Phone?
+
+Reasoning:
+
+^
+
+## Mobile .NET
+
+* Xamarin
+  * Native
+  * Forms
   
+Reasoning:
+
+^
+
+## Mobile -- HTML/Hybrid
+
+* HTML (5), JavaScript, CSS
+* PhoneGap/Cordova, CrossWalk, nw.js, ...
+* Cross-platform
+
+Reasoning: 
+
+---
+
+## Cloud
+
+* Deployment option
+  * Related: Docker?
+* Managed infrastructure
+
+^
+
+## Cloud functionality
+
+* Supplied services, vertical features
+* Base platform functionality
+  * Dynamic scalability
+  * SLA
+* Serverless computing
+
+^
+
+## Cloud -- Legal Considerations
+
+* Locations
+* Industry/governmental requirements
+
+^
+
+## Cloud Options
+
+* Azure, Amazon Web Services (PaaS, IaaS)
+* PaaS: Google (also some IaaS now), Heroku, others
+* SaaS: Office 365, Azure/AWS Websites, ...
+
+^
+
+## Cloud Reasoning
+
+* For/against cloud:
+
+* For/against specific platforms, IaaS, PaaS: 
+
+---
+
+## Open Source
+
+* Everybody does it, right?
+* Give and take...
+
+Reasoning: 
 
 ---
 

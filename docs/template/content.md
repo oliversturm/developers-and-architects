@@ -315,6 +315,7 @@ Reasoning:
 
 * This presentation: 
   * https://oliversturm.github.io/developers-and-architects/template
+  * Deprettified content in pdf format: https://oliversturm.github.io/developers-and-architects/template/slidecontent.pdf
 
 ---
 

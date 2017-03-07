@@ -337,6 +337,7 @@ Reasoning:
 
 * This presentation: 
   * https://oliversturm.github.io/developers-and-architects/basta-spring-2017
+  * Deprettified content in pdf format: https://oliversturm.github.io/developers-and-architects/basta-spring-2017/slidecontent.pdf
 
 ---
 

@@ -49,6 +49,11 @@ Idea: Talk about technology
 
 ## Building Blocks
 
+* Funktionale Module (horizontal und vertikal)
+* Architekturelle Schichten
+* Architekturelle Verteilung
+
+
 ^
 
 ## Terminology: Client Application
@@ -105,9 +110,13 @@ SOA *resulted* in a very formal understanding of service architecture, which is 
 ## Services -- Real-time Web
 
 * WebSockets and their various ancestors
+  * Libraries: SignalR, socket.io
 * Bi-directional communication
 
 Reasoning for real-time web techniques: 
+
+* Am nuetzlichsten, wenn der Server tatsaechlich von sich aus Updates schicken kann, mit zufaelliger Frequenz, aber ausreichender Haeufigkeit
+* Code-Struktur bedenken, tendenziell komplexe State Machine
 
 ---
 
@@ -125,6 +134,7 @@ How big is a microservice? It depends.
 ## Microservices -- Communication
 
 * Direct communication between services
+  * Addressierung der Dienste entweder statisch kodiert (??!?), oder Nachschlagesystem, oder Depedency Injection
 * Message Queues
 * Service Bus (ESB)
 
@@ -142,6 +152,13 @@ How big is a microservice? It depends.
 ^
 
 ## Microservices -- Reasoning
+
+* Saubere Architektur, einfaches Testen, strikte Modularisierung
+* Granulare Skalierbarkeit 
+* Unabhaengigkeit von Diensten, Updates einzelner Dienste im laufenden Betrieb
+* Overhead
+  * Programmierarbeit
+  * Ausfuehrungsgeschwindigkeit
 
 ---
 
@@ -173,6 +190,11 @@ How big is a microservice? It depends.
 * DB Independence
 
 Reasoning:
+
+* Arbeiten mit Datenbanken ohne SQL-Kenntnisse
+* Mehrere Datenbanken vom selben Code ansprechen
+* Caching und andere zusaetzliche Funktionalitaet
+* Contra: Arbeit immer auf Objektebene, Server-Updates oft schwierig
 
 ^
 

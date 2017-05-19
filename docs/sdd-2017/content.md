@@ -53,21 +53,37 @@ Idea: Talk about technology
 
 ## Terminology: Client Application
 
+* Executed locally
+* Client/Server - may only be a part of what the app does
+
 ^
 
 ## Terminology: Server Application
+
+* Serving requests
+* Application running on a "server"
+* Might have monitoring or admin interfaces
 
 ^
 
 ## Terminology: Web Application
 
+* Uses "Web" technology (HTML, JS, CSS, ... )
+* Not opposed to the terms "Server Application" and "Client Application"
+
 ^
 
 ## Terminology: Application System
 
+* System of individual applications
+* Multiple application components make up an Application System
+
 ^
 
 ## Terminology: Enterprise Application
+
+* Technically the same as an Application System
+* Assumed to be larger, greater scale, more users, more data
 
 ---
 
@@ -100,6 +116,9 @@ SOA *resulted* in a very formal understanding of service architecture, which is 
   * URLs and HTTP methods
   * JSON, XML and possibly other data formats, using content negotiation
 
+* Pro old world: static typing, data contracts
+* Pro new world: open standards, dynamic typing, less maintenance effort
+
 ^
 
 ## Services -- Real-time Web
@@ -108,6 +127,9 @@ SOA *resulted* in a very formal understanding of service architecture, which is 
 * Bi-directional communication
 
 Reasoning for real-time web techniques: 
+
+* Live data updates, little server overhead
+* Not to be used as an AJAX replacement!
 
 ---
 
@@ -143,6 +165,12 @@ How big is a microservice? It depends.
 
 ## Microservices -- Reasoning
 
+* Strong abstraction, encapsulation of services and runtime environments
+* Ease of throwaway decision reduces maintenance effort
+* Advanced deployment scenarios
+  * Continuous deployment
+  
+
 ---
 
 ## Data Persistence
@@ -164,6 +192,11 @@ How big is a microservice? It depends.
 
 ## Reasoning NoSQL vs RDBMS: 
 
+* RDBMS have built-in consistency features based on referential integrity
+* RDBMS want you to use normalized structures
+* NoSQL makes non-normalized structures easier
+* Feature set for highly distributed environments
+
 ^
 
 ## Data Persistence -- ORM
@@ -173,6 +206,10 @@ How big is a microservice? It depends.
 * DB Independence
 
 Reasoning:
+
+* No need for devs to deal with two languages
+* DB independence made easy
+* Working with classes in code instead of container datastructures
 
 ^
 

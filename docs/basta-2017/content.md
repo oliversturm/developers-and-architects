@@ -51,15 +51,36 @@ Idea: Talk about technology
 
 ^
 
+## Terminology: Anwendung, Programm
+
+* Manche sehen ein Programm als eine unfertige Anwendung
+  * Fehler, etc....
+
+^
+
 ## Terminology: Client Application
+
+* Arbeitet "lokal" auf einem System
+* Evtl. Interaktion mit Anwender
+* Teilnahme in einem Client/Server-System
 
 ^
 
 ## Terminology: Server Application
 
+* Liefert Informationen an Clients
+* Evtl. indirekte Arbeit fuer Clients
+* Nicht jede Anwendung, die auf einem "Server" laeuft, ist eine Serveranwendung
+* "Service" kann eine Serveranwendung sein, muss aber nicht
+
 ^
 
 ## Terminology: Web Application
+
+* Verwendung von "Web-Technologien"
+* Traditionell, serverseitige Generierung von Web-Inhalten
+* Aktuell: Ausfuehrung im Browser
+* Achtung: viele solche Anwendungen koennten auch als Client-Anwendungen bezeichnet werden
 
 ^
 
@@ -109,6 +130,9 @@ SOA *resulted* in a very formal understanding of service architecture, which is 
 
 Reasoning for real-time web techniques: 
 
+* Serverseitige unaufgeforderte Benachrichtigungen
+* Nicht als Ersatz fuer AJAX zu betrachten
+
 ---
 
 ## Microservices
@@ -143,6 +167,10 @@ How big is a microservice? It depends.
 
 ## Microservices -- Reasoning
 
+* Grosse Flexibilitaet
+* Erzwungene Modularisierung
+* Langfristige Pflegbarkeit
+
 ---
 
 ## Data Persistence
@@ -160,6 +188,13 @@ How big is a microservice? It depends.
 <img src="nosql.png" style="height:400px" alt="Visual Guide to NoSQL Systems">
 <small>The only image in this presentation, used with permission from Nathan Hurst, nathan@developersforgood.org</small>
 <small>http://blog.nahurst.com/visual-guide-to-nosql-systems</small>
+
+^
+
+## Eventual Consistency
+
+http://queue.acm.org/detail.cfm?id=2462076
+
 ^
 
 ## Reasoning NoSQL vs RDBMS: 

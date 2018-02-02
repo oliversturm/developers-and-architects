@@ -253,3 +253,5 @@ paket-files/
 
 # CR
 .cr/
+
+.tmp/

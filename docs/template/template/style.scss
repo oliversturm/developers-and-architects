@@ -15,7 +15,8 @@ $code-background: #373737;
 $code-color: $text-light;
 $img-background: $dark;
 $img-background-light: #ddd;
-$overlay: rgba(68, 68, 68, 0.933);
+$overlay: rgba(27, 156, 165, 0.97);
+$overlay-color: rgb(255, 251, 0);
 $font-size: 28px;
 $font-size-impact: 96px;
 $font: Helvetica, Arial, sans-serif;
@@ -328,15 +329,57 @@ li {
 .contain {
   background-size: contain;
 }
+
+// Can do this:
+// .overlay[
+// some text
+// ]
+
 .overlay {
   position: absolute;
   top: 150px;
   bottom: 100px;
   left: 100px;
   right: 100px;
+  color: $overlay-color;
   background-color: $overlay;
   border-radius: 15px;
   padding: 15px 40px;
+  font-weight: bold;
+  font-size: xx-large;
+  em {
+    color: rgb(115, 255, 0);
+  }
+  > p {
+    margin: 5 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+  h1 {
+    color: #00ff00;
+  }
+}
+
+// Can do this:
+// .overlay[.overlay-content[
+
+// # By the way
+
+// Linus doesn't mention it, but his new OS was going to be called _Freax_ at this point.
+
+// Second paragraph.
+
+// Third paragraph.
+// ]]
+
+.overlay-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  p {
+    margin: 5 0;
+  }
 }
 
 // Text

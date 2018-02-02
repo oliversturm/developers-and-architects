@@ -182,11 +182,14 @@ How big is a microservice? It depends.
 
 --
 
-.overlay[
-Thanks to Nathan Hurst &lt;nathan@developersforgood.org&gt; for the only image in this presentation, used with permission.
+.overlay[.overlay-content[
+
+# Thanks
+
+... to Nathan Hurst &lt;nathan@developersforgood.org&gt; for the only image in this presentation, used with permission.
 
 http://blog.nahurst.com/visual-guide-to-nosql-systems
-]
+]]
 
 ---
 

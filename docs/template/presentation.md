@@ -150,12 +150,22 @@ How big is a microservice? It depends.
 
 ## Microservices &mdash; Composition
 
-* Function level: AWS Lambda, Azure Functions &mdash; "Serverless" Computing
-  * Integration with cloud infrastructure for triggering and output generation
+* Manual composition? Painful.
 * Docker containers
 * docker-compose
 * Cloud container services (ecs-cli, Azure Docker VM extension)
   * Also support composition
+
+---
+
+## Microservices &mdash; Serverless
+
+* Function level composition: AWS Lambda, Azure Functions, Google Cloud Functions, ...
+  * Integration with cloud infrastructure for triggering and output generation
+* Event driven, scaleable systems with minimal infrastructure management requirements
+* Pay as you go
+* Lock-in effect
+* Debugging, Testing...
 
 ---
 

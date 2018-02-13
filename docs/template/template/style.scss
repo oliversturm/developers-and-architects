@@ -164,10 +164,30 @@ code {
   font-family: $font-fixed;
   color: $code-color !important;
   background: $code-background !important;
-  border-radius: 15px;
   margin: 10px;
   padding: 5px;
 }
+
+pre {
+  border-radius: 15px;
+  display: block;
+  padding: 0;
+}
+
+// So I can use
+// ```text
+// for no highlighting, but with same
+// indentation etc.
+code.text {
+  display: block;
+  padding: 10px !important;
+}
+
+code.linuxprompt {
+  padding-top: 200px !important;
+  font-size: 2em !important;
+}
+
 a,
 a:visited,
 a:hover,
@@ -337,8 +357,8 @@ li {
 
 .overlay {
   position: absolute;
-  top: 150px;
-  bottom: 100px;
+  top: 130px;
+  bottom: 120px;
   left: 100px;
   right: 100px;
   color: $overlay-color;
@@ -403,6 +423,9 @@ li {
 }
 .em {
   color: $tertiary;
+}
+.eem {
+  color: #f00;
 }
 .thin {
   font-weight: 200;

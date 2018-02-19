@@ -45,6 +45,8 @@ Idea: Talk about technology
 * Services
 * Microservices
 * Data persistence
+* Security
+* IoT
 * User Interfaces
 * Programming Languages
 * Mobile
@@ -71,21 +73,50 @@ Idea: Talk about technology
 
 ## Terminology: Client Application
 
+* Kann auf einem "Client" laufen
+
+  * Client im Gegensatz zum Server
+
+* Kann im Client/Server-Zusammenhang verstanden sein
+
+* Thin/Fat-Clients
+  * Einfaches Konzept aus architektureller Sicht
+  * Sehr einfaches Deployment einer einzelnen Installation
+  * Statische, planbare Anforderungen an Kommunikationsinfrastruktur
+
 ---
 
 ## Terminology: Server Application
+
+* Laeuft wahrscheinlich auf einem Server
+
+  * Kann auch ein Client sein...
+
+* Stellt Dienste bereit
+  * ...oder automatisierte Funktionen
 
 ---
 
 ## Terminology: Web Application
 
+* Traditionell: Server-Anwendung, die ueber HTTP Daten verfuegbar macht
+
+* Modern: Basiert auf HTML/JS
+  * Serverkomponente noch immer wichtig
+  * Gegenbeispiel: Wenn ein Spiel durch den AppStore auf mein iPhone gelangt und nie mit einem Server redet, ist es keine Web-Anwendung, auch wenn es in HTML/JS geschrieben ist
+
 ---
 
 ## Terminology: Application System
 
+* Die meisten "Anwendungen" haben heutzutage mehrere Komponenten und sind eigentlich Anwendungssysteme
+
 ---
 
 ## Terminology: Enterprise Application
+
+* Enterprise-Anwendungen skalieren fuer sehr grosse Organisationen und Datenvolumen
+* Architekturell nicht unbedingt anders als andere Anwendungen
 
 ---
 
@@ -125,7 +156,13 @@ SOA _resulted_ in a very formal understanding of service architecture, which is 
 * WebSockets and their various ancestors
 * Bi-directional communication
 
-Reasoning for real-time web techniques:
+Reasoning against real-time web techniques:
+
+* In manchen Faellen braucht man "nur" AJAX
+  * Client definiert den Zeitpunkt
+  * Kann automatisch von Caching profitieren
+* Bedenken Sie die "Kosten"
+* Codestruktur aehnlich State Machine
 
 ---
 
@@ -205,6 +242,10 @@ http://blog.nahurst.com/visual-guide-to-nosql-systems
 
 ## Reasoning NoSQL vs RDBMS:
 
+* Sicherstellen, dass von den Ideen der relationalen Datenhaltung profitiert wird
+
+* NoSQL sehr vielfaeltig
+
 ---
 
 ## Data Persistence &mdash; ORM
@@ -212,8 +253,6 @@ http://blog.nahurst.com/visual-guide-to-nosql-systems
 * Choice of frameworks
 * Top Down or Bottom Up?
 * DB Independence
-
-Reasoning:
 
 ---
 

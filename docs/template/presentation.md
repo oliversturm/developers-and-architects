@@ -22,18 +22,17 @@ Oliver Sturm &bull; @olivers &bull; oliver@oliversturm.com
 ]
 
 .title-logo[
-<img src="template/devexpress.png" id="devexpress" alt="DevExpress"><img src="template/mvp.png" id="mvp" alt="MVP">
+<img src="template/devexpress.png" id="devexpress" alt="DevExpress">
 ]
 
 ---
 
 ## Oliver Sturm
 
-* Training Director at DevExpress
-* Consultant, trainer, author, software architect and developer for over 25 years
-* Microsoft C# MVP
+- Training Director at DevExpress
+- Consultant, trainer, author, software architect and developer for over 25 years
 
-* Contact: oliver@oliversturm.com
+- Contact: oliver@oliversturm.com
 
 ---
 
@@ -41,27 +40,27 @@ Oliver Sturm &bull; @olivers &bull; oliver@oliversturm.com
 
 Idea: Talk about technology
 
-* Application building blocks
-* Services
-* Microservices
-* Data persistence
-* User Interfaces
-* Programming Languages
-* Mobile
-* Cloud
-* Open Source
+- Application building blocks
+- Services
+- Microservices
+- Data persistence
+- User Interfaces
+- Programming Languages
+- Mobile
+- Cloud
+- Open Source
 
 ---
 
 ## Application Building Blocks
 
-* What is an "application" made of?
-* Terminology check:
-  * Client application
-  * Server application
-  * Web application
-  * Application system
-  * Enterprise application
+- What is an "application" made of?
+- Terminology check:
+  - Client application
+  - Server application
+  - Web application
+  - Application system
+  - Enterprise application
 
 ---
 
@@ -91,10 +90,10 @@ Idea: Talk about technology
 
 ## Services
 
-* Part of most architectural concepts
-* SOA?
-* Web Services
-* "Real-time web?" SignalR? socket.io?
+- Part of most architectural concepts
+- SOA?
+- Web Services
+- "Real-time web?" SignalR? socket.io?
 
 ---
 
@@ -102,10 +101,10 @@ Idea: Talk about technology
 
 Remember the four tenets Don Box got excited about?
 
-* Boundaries are explicit
-* Services are autonomous
-* Services share schema and contract, not class
-* Service compatibility is determined based on policy
+- Boundaries are explicit
+- Services are autonomous
+- Services share schema and contract, not class
+- Service compatibility is determined based on policy
 
 SOA _resulted_ in a very formal understanding of service architecture, which is fortunately not shared by too many architects today.
 
@@ -113,17 +112,17 @@ SOA _resulted_ in a very formal understanding of service architecture, which is 
 
 ## Web Services
 
-* ASMX &mdash; WSE &mdash; WCF &mdash; WSDL &mdash; SOAP &mdash; Microsoft's world of enormous complexity intended to solve a very simple problem
-* RESTful services: the most complicated part is the name
-  * URLs and HTTP methods
-  * JSON, XML and possibly other data formats, using content negotiation
+- ASMX &mdash; WSE &mdash; WCF &mdash; WSDL &mdash; SOAP &mdash; Microsoft's world of enormous complexity intended to solve a very simple problem
+- RESTful services: the most complicated part is the name
+  - URLs and HTTP methods
+  - JSON, XML and possibly other data formats, using content negotiation
 
 ---
 
 ## Services &mdash; Real-time Web
 
-* WebSockets and their various ancestors
-* Bi-directional communication
+- WebSockets and their various ancestors
+- Bi-directional communication
 
 Reasoning for real-time web techniques:
 
@@ -133,39 +132,39 @@ Reasoning for real-time web techniques:
 
 How big is a microservice? It depends.
 
-* Do one "thing" well. What's a "thing"? It depends.
-* Two-pizza team
-* Throwawayable
-* Focus on boundaries and business context, not on lines of code
+- Do one "thing" well. What's a "thing"? It depends.
+- Two-pizza team
+- Throwawayable
+- Focus on boundaries and business context, not on lines of code
 
 ---
 
 ## Microservices &mdash; Communication
 
-* Direct communication between services
-* Message Queues
-* Service Bus (ESB)
+- Direct communication between services
+- Message Queues
+- Service Bus (ESB)
 
 ---
 
 ## Microservices &mdash; Composition
 
-* Manual composition? Painful.
-* Docker containers
-* docker-compose
-* Cloud container services (ecs-cli, Azure Docker VM extension)
-  * Also support composition
+- Manual composition? Painful.
+- Docker containers
+- docker-compose
+- Cloud container services (ecs-cli, Azure Docker VM extension)
+  - Also support composition
 
 ---
 
 ## Microservices &mdash; Serverless
 
-* Function level composition: AWS Lambda, Azure Functions, Google Cloud Functions, ...
-  * Integration with cloud infrastructure for triggering and output generation
-* Event driven, scaleable systems with minimal infrastructure management requirements
-* Pay as you go
-* Lock-in effect
-* Debugging, Testing...
+- Function level composition: AWS Lambda, Azure Functions, Google Cloud Functions, ...
+  - Integration with cloud infrastructure for triggering and output generation
+- Event driven, scaleable systems with minimal infrastructure management requirements
+- Pay as you go
+- Lock-in effect
+- Debugging, Testing...
 
 ---
 
@@ -175,12 +174,12 @@ How big is a microservice? It depends.
 
 ## Data Persistence
 
-* Relational databases
-* NoSQL options
+- Relational databases
+- NoSQL options
 
-  * Key/value and column family stores
-  * Document
-  * Data analytics (e.g. MapReduce)
+  - Key/value and column family stores
+  - Document
+  - Data analytics (e.g. MapReduce)
 
 ---
 
@@ -209,9 +208,9 @@ http://blog.nahurst.com/visual-guide-to-nosql-systems
 
 ## Data Persistence &mdash; ORM
 
-* Choice of frameworks
-* Top Down or Bottom Up?
-* DB Independence
+- Choice of frameworks
+- Top Down or Bottom Up?
+- DB Independence
 
 Reasoning:
 
@@ -221,10 +220,10 @@ Reasoning:
 
 Command/Query Responsibility Segregation
 
-* Separate query and command models
-* Conflicts with ORM?
-* Event Sourcing
-  * Eventual consistency
+- Separate query and command models
+- Conflicts with ORM?
+- Event Sourcing
+  - Eventual consistency
 
 ---
 
@@ -234,10 +233,10 @@ Command/Query Responsibility Segregation
 
 ## User Interfaces
 
-* Platforms
-  * Native: WinForms, XAML
-  * HTML
-  * Electron
+- Platforms
+  - Native: WinForms, XAML
+  - HTML
+  - Electron
 
 Reasoning for native UI platforms:
 
@@ -245,14 +244,14 @@ Reasoning for native UI platforms:
 
 ## UI Application Patterns
 
-* MVVM
-* Flux
+- MVVM
+- Flux
 
 ---
 
 ## HTML UI &mdash; Where to Render
 
-* Traditional web-server based rendering?
+- Traditional web-server based rendering?
 
 Reasoning:
 
@@ -260,23 +259,23 @@ Reasoning:
 
 ## Programming Languages
 
-* .NET: C#, VB.NET, F#, others?
-* JavaScript: Native, TypeScript, CoffeeScript, LiveScript, others?
+- .NET: C#, VB.NET, F#, others?
+- JavaScript: Native, TypeScript, CoffeeScript, LiveScript, others?
 
 ---
 
 ## Mobile
 
-* Mobile support as a conceptual module
-* Strategic platform?
+- Mobile support as a conceptual module
+- Strategic platform?
 
 ---
 
 ## "Native" Mobile
 
-* iOS SDK
-* Android SDK
-* Windows Phone?
+- iOS SDK
+- Android SDK
+- Windows Phone?
 
 Reasoning:
 
@@ -284,10 +283,10 @@ Reasoning:
 
 ## Mobile .NET
 
-* Xamarin
+- Xamarin
 
-  * Native
-  * Forms
+  - Native
+  - Forms
 
 Reasoning:
 
@@ -295,9 +294,9 @@ Reasoning:
 
 ## Mobile &mdash; HTML/Hybrid
 
-* HTML (5), JavaScript, CSS
-* PhoneGap/Cordova, CrossWalk, nw.js, ...
-* Cross-platform
+- HTML (5), JavaScript, CSS
+- PhoneGap/Cordova, CrossWalk, nw.js, ...
+- Cross-platform
 
 Reasoning:
 
@@ -305,49 +304,49 @@ Reasoning:
 
 ## Cloud
 
-* Deployment option
-  * Related: Docker?
-* Managed infrastructure
+- Deployment option
+  - Related: Docker, related orchestration (Kubernetes, ...)?
+- Managed infrastructure
 
 ---
 
 ## Cloud functionality
 
-* Supplied services, vertical features
-* Base platform functionality
-  * Dynamic scalability
-  * SLA
-* Serverless computing
+- Supplied services, vertical features
+- Base platform functionality
+  - Dynamic scalability
+  - SLA
+- Serverless computing
 
 ---
 
 ## Cloud &mdash; Legal Considerations
 
-* Locations
-* Industry/governmental requirements
+- Locations
+- Industry/governmental requirements
 
 ---
 
 ## Cloud Options
 
-* Azure, Amazon Web Services (PaaS, IaaS)
-* PaaS: Google (also some IaaS now), Heroku, others
-* SaaS: Office 365, Azure/AWS Websites, ...
+- Azure, Amazon Web Services, Google (PaaS, IaaS, FaaS, ...)
+- PaaS: Heroku, others
+- SaaS: Office 365, Azure/AWS Websites, ...
 
 ---
 
 ## Cloud Reasoning
 
-* For/against cloud:
+- For/against cloud:
 
-* For/against specific platforms, IaaS, PaaS:
+- For/against specific platforms, IaaS, PaaS:
 
 ---
 
 ## Open Source
 
-* Everybody does it, right?
-* Give and take...
+- Everybody does it, right?
+- Give and take...
 
 Reasoning:
 
@@ -355,10 +354,10 @@ Reasoning:
 
 ## Sources
 
-* This presentation:
+- This presentation:
 
-  * https://oliversturm.github.io/developers-and-architects/template
-  * PDF download: <br>https://oliversturm.github.io/developers-and-architects/template/slides.pdf
+  - https://oliversturm.github.io/developers-and-architects/template
+  - PDF download: <br>https://oliversturm.github.io/developers-and-architects/template/slides.pdf
 
 ---
 
@@ -373,5 +372,5 @@ Oliver Sturm &bull; @olivers &bull; oliver@oliversturm.com
 ]
 
 .title-logo[
-<img src="template/devexpress.png" id="devexpress" alt="DevExpress"><img src="template/mvp.png" id="mvp" alt="MVP">
+<img src="template/devexpress.png" id="devexpress" alt="DevExpress">
 ]

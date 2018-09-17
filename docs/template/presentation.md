@@ -234,7 +234,7 @@ Command/Query Responsibility Segregation
 ## User Interfaces
 
 - Platforms
-  - Native: WinForms, XAML
+  - Native: WinForms, XAML, Mobile
   - HTML
   - Electron
 

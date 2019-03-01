@@ -62,12 +62,26 @@ Was sind Ihre Fragen? Diskussionspunkte?
 
 ---
 
+## Fragen
+
+- Microservices, Strategien, Versionierung, wie klein sind die eigentlich, Kommunikation, Domain driven, Infrastruktur Anforderungen, Migration nach Microservices, Datenhaltung SST oder Redundanz?
+- Skalierbarbeit von Anwendungen
+- Langlebigkeit von Architektur (etwa fuer 10 Jahre)
+- Xamarin - konkurrenzfaehig?
+- Angular, Vue, React - auch mobile - was ist mit Blazor? - TypeScript vs JavaScript
+- Datenvalidierung, business rules
+- Cloud, Erfahrungen mit Verfuegbarkeit von Diensten und Funktionen, wann ist on-premise sinnvoll
+- Datenbanken, je nach Anwendungsfall
+- Oliver Sturm's Best Practices Architekturmodell 2019
+
+---
+
 ## Sources
 
 - This presentation:
 
-  - https://oliversturm.github.io/developers-and-architects/basta-2019
-  - PDF download: <br>https://oliversturm.github.io/developers-and-architects/basta-2019/slides.pdf
+  - https://oliversturm.github.io/developers-and-architects/basta-spring-2019
+  - PDF download: <br>https://oliversturm.github.io/developers-and-architects/basta-spring-2019/slides.pdf
 
 ---
 

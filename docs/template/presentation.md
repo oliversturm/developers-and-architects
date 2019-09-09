@@ -1,5 +1,5 @@
 title: Developers and Architects
-subtitle: Strategies 2018
+subtitle: Strategies 2019
 class: animation-fade
 layout: true
 
@@ -65,6 +65,10 @@ Idea: Talk about technology
 ---
 
 ## Building Blocks
+
+```js
+const foo = thing => ({[thing.name]: thing.value});
+```
 
 ---
 

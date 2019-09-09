@@ -2,26 +2,26 @@
 // ---------------------------------------------------------------------------
 
 $primary: #fff;
-$secondary: #b4f500;
+$secondary: #ff8800;
 $tertiary: #00d8f5;
 $light: #fff;
-$dark: #272727;
+$dark: rgb(30, 20, 31);
 $text-dark: #272727;
 $text-light: $light;
 $text-bottom: #bbb;
-$title-color: #f00;
-$url-color: #ff0;
+$title-color: #FFBF00;
+$url-color: #ffbf00;
 $code-background: #373737;
 $code-color: $text-light;
 $img-background: $dark;
 $img-background-light: #ddd;
-$overlay: rgba(27, 156, 165, 0.97);
-$overlay-color: rgb(255, 251, 0);
+$overlay: rgba(20, 108, 114, 0.97);
+$overlay-color: #ffbf00;
 $font-size: 28px;
 $font-size-impact: 96px;
-$font: Helvetica, Arial, sans-serif;
-$font-title: 'Alegreya sans black', Arial, Helvetica, sans-serif;
-$font-fixed: 'Fira Code Retina', 'Consolas', 'Courier New', 'Lucida Console',
+$font: Livvic, Helvetica, Arial, sans-serif;
+$font-title: 'Livvic', Arial, Helvetica, sans-serif;
+$font-fixed: 'Fira Code', 'Consolas', 'Courier New', 'Lucida Console',
   Monaco, monospace;
 $margin: 20px;
 $iframe-scale: 1.5;
@@ -148,7 +148,7 @@ h5,
 h6 {
   margin: 0 0 $margin 0;
   font-family: $font-title;
-  font-variant: small-caps;
+  //font-variant: small-caps;
   color: $title-color;
 }
 li {
@@ -362,9 +362,9 @@ li {
   border-radius: 15px;
   padding: 15px 40px;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: x-large;
   em {
-    color: rgb(115, 255, 0);
+    color: $secondary;
   }
   > p {
     margin: 5 0;
@@ -373,7 +373,7 @@ li {
     transform: translateY(-60%);
   }
   h1 {
-    color: #00ff00;
+    color: $secondary;
   }
 }
 

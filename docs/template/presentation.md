@@ -66,10 +66,6 @@ Idea: Talk about technology
 
 ## Building Blocks
 
-```js
-const foo = thing => ({[thing.name]: thing.value});
-```
-
 ---
 
 ## Terminology: Client Application

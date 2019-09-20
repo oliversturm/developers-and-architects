@@ -54,8 +54,7 @@ class: columns-ul
 - Container und VMs - Docker, Kubernetes, Vagrant, Terraform...
 - Blazor? Xamarin? Womit konkurrieren diese Plattformen?
 - Wie mache ich am besten Mobile?
-- CQRS? Event Sourcing?
-- Was ist die beste Datenbank in 2019?
+- CQRS? Event Sourcing? Eventual Consistency? Moderne Datenzugriffspatterns
 - React vs Vue vs Angular usw....
 - TypeScript oder doch einfach JavaScript?
 - Oliver Sturm's Best Practices Architekturmodell

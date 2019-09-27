@@ -1,5 +1,5 @@
-title: Developers and Architects
-subtitle: Strategies 2019
+title: Entwickler und Architekten
+subtitle: Strategien 2019
 class: animation-fade
 layout: true
 
@@ -64,6 +64,53 @@ class: columns-ul
 class: columns-ul
 
 ## Fragen
+
+- Microservices
+- Serverless
+- CQRS, Event Sourcing...
+- Blazor und Xamarin
+- Container, Docker etc
+- Altlasten modernisieren
+- Anpassbare Standardsoftware entwickeln (Workflow-Komponenten)
+- Vue vs React vs Angular
+- Was kann man gegen Excel tun?
+- JavaScript vs TypeScript
+
+---
+
+## Dienststruktur
+
+.svg-light[![](microservices-logical.svg)]
+
+---
+
+## CQRS und Event Sourcing
+
+.svg-light[![](crqs-es.svg)]
+
+---
+
+## Hypervisors
+
+.svg-light-width[![](hypervisors.svg)]
+
+---
+
+## Container und VMs
+
+.svg-light[![](containers-and-vms.svg)]
+
+---
+
+## CAP Theorem
+
+.svg-light[![](cap-theorem.svg)]
+
+---
+
+## JavaScript vs TypeScript
+
+.svg-light[![](static-types.svg)]
 
 ---
 

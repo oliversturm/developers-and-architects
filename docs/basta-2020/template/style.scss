@@ -9,20 +9,20 @@ $dark: rgb(30, 20, 31);
 $text-dark: #272727;
 $text-light: $light;
 $text-bottom: #bbb;
-$title-color: #FFBF00;
+$title-color: #ffbf00;
 $url-color: #ffbf00;
 $code-background: #373737;
 $code-color: $text-light;
 $img-background: $dark;
-$img-background-light: #ddd;
+$img-background-light: rgb(250, 250, 250);
 $overlay: rgba(20, 108, 114, 0.97);
 $overlay-color: #ffbf00;
 $font-size: 28px;
 $font-size-impact: 96px;
 $font: Livvic, Helvetica, Arial, sans-serif;
 $font-title: 'Livvic', Arial, Helvetica, sans-serif;
-$font-fixed: 'Fira Code', 'Consolas', 'Courier New', 'Lucida Console',
-  Monaco, monospace;
+$font-fixed: 'Fira Code', 'Consolas', 'Courier New', 'Lucida Console', Monaco,
+  monospace;
 $margin: 20px;
 $iframe-scale: 1.5;
 
@@ -49,18 +49,52 @@ $iframe-scale: 1.5;
   right: 60px;
   bottom: 60px;
   background-color: $img-background;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
   img {
+    // This height setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra height setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
     height: -webkit-fill-available;
-    height: -moz-available;
-    max-height: 520px;
-    object-fit: contain;
-    margin: 0;
+    flex: auto;
   }
   p {
     margin: 0;
   }
 }
+
+.svg-padding {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  background-color: $img-background;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  img {
+    // This height setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra height setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    height: -webkit-fill-available;
+    flex: auto;
+    padding: 20px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 .svg-light {
   position: absolute;
   top: 100px;
@@ -68,13 +102,72 @@ $iframe-scale: 1.5;
   right: 60px;
   bottom: 60px;
   background-color: $img-background-light;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
   img {
+    // This height setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra height setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
     height: -webkit-fill-available;
-    height: -moz-available;
-    max-height: 520px;
-    object-fit: contain;
+    flex: auto;
+  }
+  p {
     margin: 0;
+  }
+}
+
+.svg-light-100 {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  background-color: $img-background-light;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  img {
+    // This height setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra height setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    height: 100%;
+    flex: auto;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.svg-light-padding {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  background-color: $img-background-light;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  img {
+    // This height setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra height setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    height: -webkit-fill-available;
+    flex: auto;
+    padding: 20px;
   }
   p {
     margin: 0;
@@ -84,6 +177,7 @@ $iframe-scale: 1.5;
 em {
   color: $secondary;
 }
+
 .svg-width {
   position: absolute;
   top: 100px;
@@ -91,18 +185,58 @@ em {
   right: 60px;
   bottom: 60px;
   background-color: $img-background;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
   img {
+    // This width setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra width setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    // Comment on the comment: I haven't actually tested in
+    // detail that the width is as necessary as the height
+    // setting.
     width: -webkit-fill-available;
-    width: -moz-available;
-    max-width: 1080px;
-    object-fit: contain;
-    margin: 0;
+    flex: auto;
   }
   p {
     margin: 0;
   }
 }
+
+.svg-width-padding {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  background-color: $img-background;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  img {
+    // This width setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra width setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    // Comment on the comment: I haven't actually tested in
+    // detail that the width is as necessary as the height
+    // setting.
+    width: -webkit-fill-available;
+    flex: auto;
+    padding: 20px;
+  }
+  p {
+    margin: 0;
+  }
+}
+
 .svg-light-width {
   position: absolute;
   top: 100px;
@@ -110,13 +244,52 @@ em {
   right: 60px;
   bottom: 60px;
   background-color: $img-background-light;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
   img {
+    // This width setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra width setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    // Comment on the comment: I haven't actually tested in
+    // detail that the width is as necessary as the height
+    // setting.
     width: -webkit-fill-available;
-    width: -moz-available;
-    max-width: 1080px;
-    object-fit: contain;
+    flex: auto;
+  }
+  p {
     margin: 0;
+  }
+}
+
+.svg-light-width-padding {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  background-color: $img-background-light;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  img {
+    // This width setting should be unnecessary with the
+    // align-items setting above and the flex setting below.
+    // Firefox works fine like that, but Chrome only seems
+    // to be happy with this extra width setting - otherwise
+    // it appears to simply ignore flex-grow if align-items
+    // is set on the parent to center, flex-end or anything similar.
+    // Comment on the comment: I haven't actually tested in
+    // detail that the width is as necessary as the height
+    // setting.
+    width: -webkit-fill-available;
+    flex: auto;
+    padding: 20px;
   }
   p {
     margin: 0;
@@ -263,6 +436,88 @@ li {
     transform: scale($iframe-scale);
     transform-origin: 0 0;
     border: 0;
+  }
+}
+
+// use like this
+// ---
+//
+// class: columns
+//
+// ## Title
+//
+// .column-content[
+// Some text here
+//
+// Some more text
+//
+// Third block of text
+//
+// text text text
+//
+// Number five
+//
+// sixth block's the charm
+//
+// Let's see what seven does
+//
+// Eight is great
+//
+// Nine is fine
+//
+// Ten is even better
+//
+// Hah hah
+// ]
+//
+// ---
+//
+.columns {
+  .column-content {
+    height: 530px;
+    columns: 100px 2;
+    margin-top: 0;
+    column-fill: auto;
+    column-rule-style: dotted;
+    column-gap: 60px;
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// use like this
+// ---
+//
+// class: columns-ul
+//
+// ## Fragen
+//
+// - One
+// - two
+// - three
+// - four
+// - five
+// - six
+// - seven
+// - eight
+// - nine
+// - ten
+// - eleven
+// - twelve
+// - thirteen
+// - fourteen
+//
+// ---
+//
+.columns-ul {
+  ul {
+    height: 530px;
+    columns: 100px 2;
+    margin-top: 0;
+    column-fill: auto;
+    column-rule-style: dotted;
+    column-gap: 80px;
   }
 }
 

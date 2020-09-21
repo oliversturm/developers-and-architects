@@ -67,7 +67,12 @@ class: columns-ul
 
 ## Fragen
 
-- _noch keine_
+- Cloud - Kostenkontrolle - wie weiss man, was die eigene Anwendung kostet?
+- Hochverfuegbarkeit notwendig - kann man "hybrid" oder lokal arbeiten, wenn die Cloud unzugaenglich ist? Docker - Registry lokal?
+- On Premise-System in die Cloud migrieren, moeglichst ohne Aenderungen, was sind die Stolpersteine?
+- GraphQL - wo gehoert das ins Datenzugriffssystem? Im Vergleich mit OData?
+- Daten transferieren zwischen lokal und Cloud im Hybridsetup? Datenbankinhalte
+- Beispiel Consul - Azure-Service oder separater Container - SaaS oder separates Deployment?
 
 ---
 
@@ -125,9 +130,21 @@ class: columns-ul
 
 ---
 
-## GraphQL
+## GraphQL Basics
 
 .svg-light[![](graphql-basics.svg)]
+
+---
+
+## GraphQL Endpoint in Readmodel
+
+.svg-light[![](graphql-endpoint-in-read-model.svg)]
+
+---
+
+## GraphQL - Frontend Service
+
+.svg-light[![](frontend-graphql-service.svg)]
 
 ---
 

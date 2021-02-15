@@ -67,7 +67,17 @@ class: columns-ul
 
 ## Fragen
 
-- &lt;noch keine&gt;
+- Microservices, CQRS, Event Sourcing (Weinand)
+- Wie kommt Software in die Cloud? (Klotz)
+- .NET Core nach .NET 5 / jetzt oder spaeter? (Westphal)
+- Blazor, jetzt oder spaeter? (Heiniger)
+- Ist die Zukunft der Software wirklich Web? (Mohr)
+- Sidecar-Framework fuer Cloud (Heiniger)
+- Mobile oder Desktop oder beides? Best practices (Nasuf)
+- Konfiguration von Microservices, zentral oder pro Service (Torrente)
+- Sicherheit - User darf nichts manipulieren koennen (Klotz)
+- Welche Technologien sind besonders gut fuer kleine Teams, kann ich skalierfaehige Prototypen erzeugen (Ruether)
+- How to avoid the big ball of mud?
 
 ---
 
